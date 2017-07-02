@@ -1,0 +1,361 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 350, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "IP-MAC Manager"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         105,IDC_STATIC,"Static",SS_BITMAP,0,0,367,228
+    COMBOBOX        COMBO_IP,16,69,213,16,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "View IP Details",B_VIEWIP,256,67,80,16
+    PUSHBUTTON      "Backup Config",B_BACKUPIP,256,87,80,16
+    PUSHBUTTON      "Restore Config",B_RESTOREIP,256,106,80,16
+    COMBOBOX        COMBO_MAC,16,153,213,16,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Spoof MAC",B_CHANGEMAC,256,155,80,16
+    PUSHBUTTON      "Restore MAC",B_RESTOREMAC,256,175,80,16
+    PUSHBUTTON      "Help",B_HELP,5,202,47,13
+    PUSHBUTTON      "About",B_ABOUT,57,202,48,13
+    PUSHBUTTON      "Quit Program",B_EXIT,256,200,80,15
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 188, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About IP-MAC Manager"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "IP-MAC Manager Version 1.4",IDC_STATIC,48,10,93,8
+    LTEXT           "Copyright © 2009-2010, Hyphen",IDC_STATIC,48,19,109,8
+    LTEXT           "Developer: Anupam Saha (Hyphen)",IDC_STATIC,48,29,120,8
+    PUSHBUTTON      "OK",About_OK,68,45,53,13
+    ICON            IDI_ICON1,IDC_STATIC,12,18,20,20,SS_CENTERIMAGE
+END
+
+IDD_CURRENTIP DIALOGEX 0, 0, 180, 158
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Current IP Config"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",CURRENTIP_OK,63,138,50,14
+    LTEXT           "IP Address",IDC_STATIC,23,50,39,9
+    LTEXT           "Subnet Mask",IDC_STATIC,23,58,42,9
+    LTEXT           "DNS Servers",IDC_STATIC,23,75,42,8
+    CONTROL         104,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE,2,0,175,36
+    LTEXT           "Default Gateway",IDC_STATIC,23,66,57,8
+END
+
+SLEEP_BAKUP DIALOGEX 0, 0, 160, 33
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Please wait..",IDC_STATIC,57,12,44,8
+END
+
+IDD_RESTOREDAILOG DIALOGEX 0, 0, 254, 158
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Restore Selected",RE_SELECTED,3,140,65,14
+    PUSHBUTTON      "Delete Selected",RE_DE_SE,74,140,66,14
+    PUSHBUTTON      "Delete All",RE_DE,146,140,54,14
+    PUSHBUTTON      "Close",RE_CLOSE,204,140,43,14
+    CONTROL         121,IDC_STATIC,"Static",SS_BITMAP,2,1,251,38
+    LTEXT           "IP Address                    Description                   Backup Time",IDC_STATIC,26,43,196,8
+END
+
+SLEEP_REIP DIALOGEX 0, 0, 173, 33
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Restoring selected IP configuration",IDC_STATIC,28,12,112,8
+END
+
+SLEEP_READAP DIALOGEX 0, 0, 173, 33
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Restarting Adapter",IDC_STATIC,52,12,62,8
+END
+
+IDD_SPMAC DIALOGEX 0, 0, 232, 164
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Spoof MAC"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        ID_EDIT1,63,74,19,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_EDIT2,87,74,19,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_EDIT3,111,74,19,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_EDIT4,135,74,19,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_EDIT5,158,74,19,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_EDIT6,182,74,19,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Set MAC",SP_MAC_SETMACBTN,21,146,65,14
+    PUSHBUTTON      "Randomize",SP_MAC_RANDBTN,91,146,65,14
+    PUSHBUTTON      "Close",SP_MAC_CLOSEBTN,161,146,65,14
+    CONTROL         112,IDC_STATIC,"Static",SS_BITMAP,2,2,175,33
+    LTEXT           "New MAC    :",IDC_STATIC,7,74,45,8
+    LTEXT           "Note. MAC Address is 6 byte(48 bit) value. Put only 6 pairs of hexadecimal combination. i.e. 0-9 and A-F.",IDC_STATIC,8,100,215,16
+    LTEXT           "e.g. 00-B3-9D-2A-C2-8F, 2A-9C-34-A5-2F-8B",IDC_STATIC,8,122,228,8
+END
+
+SLEEP_SPMAC DIALOGEX 0, 0, 173, 33
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Setting New MAC Address",IDC_STATIC,40,13,91,8
+END
+
+SLEEP_REMAC DIALOGEX 0, 0, 173, 33
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Restoring Original MAC Address",IDC_STATIC,37,13,101,9
+END
+
+SLEEP_REDE DIALOGEX 0, 0, 160, 33
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Clearing all backups for this connection",SLEEP_RE_DE,17,12,125,9
+END
+
+IDD_Enter_Desc DIALOGEX 0, 0, 175, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter Description"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT2,6,66,107,12,ES_CENTER | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,122,64,45,14
+    CONTROL         104,IDC_STATIC,"Static",SS_BITMAP,1,1,174,33
+    LTEXT           "",IDC_Desc,8,43,155,9
+    LTEXT           "Limit: Max 14 characters",IDC_STATIC,7,56,88,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        VERTGUIDE, 17
+        VERTGUIDE, 19
+        VERTGUIDE, 236
+        VERTGUIDE, 256
+        VERTGUIDE, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_CURRENTIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    SLEEP_BAKUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 29
+    END
+
+    IDD_RESTOREDAILOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+    END
+
+    SLEEP_REIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 32
+    END
+
+    SLEEP_READAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_SPMAC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    SLEEP_SPMAC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 31
+    END
+
+    SLEEP_REMAC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 31
+    END
+
+    SLEEP_REDE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_Enter_Desc, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP                  "CurIP_.BMP"
+IDB_BITMAP1             BITMAP                  "ip-mac.BMP"
+IDB_BITMAP3             BITMAP                  "sp_mac.bmp"
+IDB_BITMAP4             BITMAP                  "Re_IP.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "Icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,4,0,1
+ PRODUCTVERSION 1,4,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Hyphen"
+            VALUE "FileVersion", "1, 4, 0, 1"
+            VALUE "InternalName", "IP-MAC"
+            VALUE "LegalCopyright", "Copyright (C) Hyphen, 2009-2010"
+            VALUE "OriginalFilename", "IP-MAC.exe"
+            VALUE "ProductName", "IP-MAC Manager"
+            VALUE "ProductVersion", "1, 4, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
