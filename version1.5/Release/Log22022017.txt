@@ -1,0 +1,29 @@
+******************** Application started ********************
+15:48:50 Adapter index: 0
+15:48:50 FriendlyName: Ethernet
+15:48:50 MAC Address: C8-5B-76-9D-67-0E
+15:48:50 GUID: {F8562117-6B33-4150-B300-F10C3763B367}
+15:48:50 Adapter EnableDHCP: 1
+15:48:50 Failed RetrieveConnectionInfo Reason: RegQueryValueEx Key: DhcpIPAddress2
+15:48:50 Failed RetrieveConnectionInfo Reason: RegQueryValueEx Key: DhcpSubnetMask2
+15:48:50 Failed RetrieveConnectionInfo Reason: RegQueryValueEx Key: DhcpDefaultGateway2
+15:48:50 Failed RetrieveConnectionInfo Reason: RegQueryValueEx Key: DhcpNameServer2
+15:48:50 Adapter index: 1
+15:48:50 FriendlyName: Local Area Connection* 2
+15:48:50 MAC Address: 92-CD-B6-7A-A5-67
+15:48:50 GUID: {7AA38246-CA21-467C-A97C-8AF56C2215BA}
+15:48:50 Adapter EnableDHCP: 1
+15:48:50 Failed RetrieveConnectionInfo Reason: RegQueryValueEx Key: DhcpIPAddress2
+15:48:50 Failed RetrieveConnectionInfo Reason: RegQueryValueEx Key: DhcpSubnetMask2
+15:48:50 Failed RetrieveConnectionInfo Reason: RegQueryValueEx Key: DhcpDefaultGateway2
+15:48:50 Failed RetrieveConnectionInfo Reason: RegQueryValueEx Key: DhcpNameServer2
+15:48:50 Adapter index: 2
+15:48:50 FriendlyName: Wi-Fi
+15:48:50 MAC Address: 90-CD-B6-7A-A5-67
+15:48:50 GUID: {23748DCC-8931-4E93-89AA-284E9C3AAF7E}
+15:48:50 Adapter EnableDHCP: 1
+15:48:50 Adapter DhcpIPAddress 192.168.11.3
+15:48:50 Adapter DhcpSubnetMask 255.255.255.0
+15:48:50 Adapter DhcpDefaultGateway 192.168.11.1
+15:48:50 Adapter DhcpNameServer 192.168.11.1
+******************** Application terminated ********************

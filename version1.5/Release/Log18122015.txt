@@ -1,0 +1,29 @@
+******************** Application started ********************
+16:58:34 Adapter index: 0
+16:58:34 FriendlyName: Local Area Connection 6
+16:58:34 MAC Address: 00-FF-00-75-B4-D8
+16:58:34 GUID: {0075B4D8-807D-4CEF-94CE-02F011D76AE3}
+16:58:34 Adapter EnableDHCP: 1
+16:58:34 Adapter DhcpIPAddress 0.0.0.0
+16:58:34 Adapter DhcpSubnetMask 255.0.0.0
+16:58:34 Failed RetrieveConnectionInfo Reason: RegQueryValueEx Key: DhcpDefaultGateway2
+16:58:34 Failed RetrieveConnectionInfo Reason: RegQueryValueEx Key: DhcpNameServer2
+16:58:34 Adapter index: 1
+16:58:34 FriendlyName: Local Area Connection 2
+16:58:34 MAC Address: 02-E0-98-D7-04-01
+16:58:34 GUID: {39717B6D-DB59-492C-8415-E8700490E033}
+16:58:34 Adapter EnableDHCP: 1
+16:58:34 Adapter DhcpIPAddress 0.0.0.0
+16:58:34 Adapter DhcpSubnetMask 255.0.0.0
+16:58:34 Failed RetrieveConnectionInfo Reason: RegQueryValueEx Key: DhcpDefaultGateway2
+16:58:34 Failed RetrieveConnectionInfo Reason: RegQueryValueEx Key: DhcpNameServer2
+16:58:34 Adapter index: 2
+16:58:34 FriendlyName: Local Area Connection
+16:58:34 MAC Address: 00-02-16-02-11-1D
+16:58:34 GUID: {404C03CC-E6CF-475C-A1C1-9C19B2146B35}
+16:58:34 Adapter EnableDHCP: 1
+16:58:34 Adapter DhcpIPAddress 192.168.0.2
+16:58:34 Adapter DhcpSubnetMask 255.255.255.0
+16:58:34 Adapter DhcpDefaultGateway 192.168.0.1
+16:58:34 Adapter DhcpNameServer 172.16.43.65 8.8.8.8
+******************** Application terminated ********************
